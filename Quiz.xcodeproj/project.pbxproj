@@ -14,6 +14,9 @@
 		CD7F744E225A4B3F002AB2BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7F744C225A4B3F002AB2BA /* LaunchScreen.storyboard */; };
 		CD7F7459225A4B3F002AB2BA /* QuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F7458225A4B3F002AB2BA /* QuizTests.swift */; };
 		CD7F7464225A4B3F002AB2BA /* QuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F7463225A4B3F002AB2BA /* QuizUITests.swift */; };
+		CD7F7472225A65D3002AB2BA /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F7471225A65D3002AB2BA /* QuestionModel.swift */; };
+		CD7F7477225A677E002AB2BA /* AnswersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F7476225A677E002AB2BA /* AnswersModel.swift */; };
+		CD7F747A225A6E16002AB2BA /* ArrayDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F7479225A6E16002AB2BA /* ArrayDao.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		CD7F745F225A4B3F002AB2BA /* QuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7F7463225A4B3F002AB2BA /* QuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizUITests.swift; sourceTree = "<group>"; };
 		CD7F7465225A4B3F002AB2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD7F7471225A65D3002AB2BA /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		CD7F7476225A677E002AB2BA /* AnswersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersModel.swift; sourceTree = "<group>"; };
+		CD7F7479225A6E16002AB2BA /* ArrayDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDao.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +103,11 @@
 		CD7F7442225A4B3D002AB2BA /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				CD7F7478225A6E03002AB2BA /* Dao */,
+				CD7F7475225A65EF002AB2BA /* Controller */,
+				CD7F7474225A65E5002AB2BA /* View */,
+				CD7F7473225A65D8002AB2BA /* Model */,
 				CD7F7443225A4B3D002AB2BA /* AppDelegate.swift */,
-				CD7F7445225A4B3D002AB2BA /* ViewController.swift */,
-				CD7F7447225A4B3D002AB2BA /* Main.storyboard */,
 				CD7F744A225A4B3F002AB2BA /* Assets.xcassets */,
 				CD7F744C225A4B3F002AB2BA /* LaunchScreen.storyboard */,
 				CD7F744F225A4B3F002AB2BA /* Info.plist */,
@@ -123,6 +131,39 @@
 				CD7F7465225A4B3F002AB2BA /* Info.plist */,
 			);
 			path = QuizUITests;
+			sourceTree = "<group>";
+		};
+		CD7F7473225A65D8002AB2BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD7F7471225A65D3002AB2BA /* QuestionModel.swift */,
+				CD7F7476225A677E002AB2BA /* AnswersModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD7F7474225A65E5002AB2BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD7F7447225A4B3D002AB2BA /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD7F7475225A65EF002AB2BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD7F7445225A4B3D002AB2BA /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CD7F7478225A6E03002AB2BA /* Dao */ = {
+			isa = PBXGroup;
+			children = (
+				CD7F7479225A6E16002AB2BA /* ArrayDao.swift */,
+			);
+			path = Dao;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +297,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD7F747A225A6E16002AB2BA /* ArrayDao.swift in Sources */,
 				CD7F7446225A4B3D002AB2BA /* ViewController.swift in Sources */,
+				CD7F7477225A677E002AB2BA /* AnswersModel.swift in Sources */,
+				CD7F7472225A65D3002AB2BA /* QuestionModel.swift in Sources */,
 				CD7F7444225A4B3D002AB2BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
