@@ -152,6 +152,7 @@ class ViewController: UIViewController {
         
         if(endedGame){
             starQuiz()
+            showQuestion(0)
         } else {
             nextQuestion()
         }
